@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Django  app
+{% endblock %}
+
+
+{% block content %}
+<h1>welocome to the chai Detail page </h1>
+
+<h2>{{ chai.name }}</h2>
+
+{% comment %} <p>{{ chai.description }}</p> {% endcomment %}
+
+{% comment %} <p>Price: {{ chai.price }}</p> {% endcomment %}
+
+{% comment %} <a href="{% url 'chai:index' %}">Back to Chai List</a> {% endcomment %}
+<img src="{{chai.image.url}}" alt="">
+
+
+{% endblock %}
